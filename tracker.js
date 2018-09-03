@@ -476,6 +476,7 @@ function calculatePortfolioBalance(portfolio_state, stock_prices, date) {
 			console.log("date", date, typeof date)
 			console.log("price object", stock_prices[symbol])
 			console.log("price:", stock_prices[symbol][date])
+			console.log("price 2018-8-23:", stock_prices[symbol]['2018-08-23'])
 			console.log("shares: ", portfolio_state[symbol]["total_shares"])
 			console.log("balance: ", stock_prices[symbol][date]*portfolio_state[symbol]["total_shares"])		
 	})
